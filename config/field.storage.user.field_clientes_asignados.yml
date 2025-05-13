@@ -1,0 +1,19 @@
+uuid: d6117105-ec35-4679-bd2b-765bdecf119b
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_clientes_asignados
+field_name: field_clientes_asignados
+entity_type: user
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

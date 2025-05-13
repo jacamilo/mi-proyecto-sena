@@ -1,0 +1,20 @@
+uuid: 06f679c8-4c63-4c2e-9c85-41cc4f553c3d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_nit
+  module:
+    - user
+id: user.user.field_nit
+field_name: field_nit
+entity_type: user
+bundle: user
+label: Nit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

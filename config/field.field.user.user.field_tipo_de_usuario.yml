@@ -1,0 +1,21 @@
+uuid: a5d13325-bcab-4285-b5a0-2780177397aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_tipo_de_usuario
+  module:
+    - options
+    - user
+id: user.user.field_tipo_de_usuario
+field_name: field_tipo_de_usuario
+entity_type: user
+bundle: user
+label: 'Tipo de usuario'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

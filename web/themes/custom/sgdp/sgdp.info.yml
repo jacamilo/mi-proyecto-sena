@@ -1,0 +1,29 @@
+name: sgdp
+type: theme
+description: 'Tema Sgdp'
+core_version_requirement: ^10.1 || ^11.0
+base theme: bootstrap5
+
+libraries:
+  - bootstrap5/base
+  - bootstrap5/messages
+  - core/normalize
+  - bootstrap5/bootstrap5-js-latest
+  - bootstrap5/global-styling
+
+libraries-extend:
+  user/drupal.user:
+    - bootstrap5/user
+  core/drupal.dropbutton:
+    - bootstrap5/dropbutton
+  core/drupal.dialog:
+    - bootstrap5/dialog
+  file/drupal.file:
+    - bootstrap5/file
+  core/drupal.progress:
+    - bootstrap5/progress
+
+regions:
+  header: Header
+  content: 'Main content'
+  footer: Footer

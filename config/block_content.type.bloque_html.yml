@@ -1,0 +1,8 @@
+uuid: 19a5fad5-e5b3-4787-81a1-1d889877faff
+langcode: es
+status: true
+dependencies: {  }
+id: bloque_html
+label: 'Bloque html'
+revision: false
+description: 'Tipo de bloque para crear codigo html'

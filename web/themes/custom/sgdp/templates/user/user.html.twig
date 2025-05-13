@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Theme override to present all user data.
+ *
+ * This template is used when viewing a registered user's page,
+ * e.g., example.com/user/123. 123 being the user's ID.
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ *   print a subset such as 'content.field_example'. Fields attached to a user
+ *   such as 'user_picture' are available as 'content.user_picture'.
+ * - attributes: HTML attributes for the container element.
+ * - user: A Drupal User entity.
+ *
+ * @see template_preprocess_user()
+ */
+#}
+<div class="card shadow-sm border-0 mb-4">
+	<div class="card-body">
+		<h5 class="card-title mb-3">Información del Usuario</h5>
+		<div class="mb-3">
+			{{content.member_for["#markup"]|raw}}
+		</div>
+		<ul class="list-group list-group-flush">
+			<li class="list-group-item d-flex justify-content-between">
+				<span>
+					<strong>Nombre completo:</strong>
+				</span>
+				<span>{{content.field_nombre_completo[0]["#context"].value}}</span>
+			</li>
+			<li class="list-group-item d-flex justify-content-between">
+				<span>
+					<strong>Tipo de usuario:</strong>
+				</span>
+				<span>{{content.field_tipo_de_usuario[0]["#markup"]}}</span>
+			</li>
+			<li class="list-group-item d-flex justify-content-between">
+				<span>
+					<strong>Nit:</strong>
+				</span>
+				<span>{{content.field_nit[0]["#context"].value}}</span>
+			</li>
+			<li class="list-group-item d-flex justify-content-between">
+				<span>
+					<strong>Rut:</strong>
+				</span>
+				<span>{{content.field_rut}}</span>
+			</li>
+		</ul>
+	</div>
+</div>

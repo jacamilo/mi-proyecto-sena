@@ -1,0 +1,25 @@
+uuid: 3ead4acd-2bbd-4983-b36e-0101be7aac0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.layout_builder__layout
+    - node.type.page
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+_core:
+  default_config_hash: M_Y8L5tfmhx7DR143E05YyZSpvgil6VFvqcfBWykalg
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content: {  }
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  links: true

@@ -1,0 +1,4 @@
+name: Sgdp core
+description: Sgdp Core
+type: module
+core_version_requirement: ^10 || ^11

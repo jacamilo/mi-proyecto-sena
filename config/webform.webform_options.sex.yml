@@ -1,0 +1,16 @@
+uuid: beea5866-1d0f-4b64-a0f8-ad8bc4e51c01
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: WRpxpwYpfcO_i0so7BV4QXxXlbPiSVppYmAV6DAz4c0
+id: sex
+label: Sexo
+category: Demográfico
+likert: false
+options: |
+  Male: Male
+  Female: Female

@@ -1,0 +1,27 @@
+uuid: 25d45482-7211-4579-85d6-7a4a8872ae17
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_rut
+  module:
+    - file
+    - user
+id: user.user.field_rut
+field_name: field_rut
+entity_type: user
+bundle: user
+label: Rut
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+field_type: file

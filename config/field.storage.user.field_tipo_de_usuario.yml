@@ -1,0 +1,27 @@
+uuid: 6ad6a462-65a7-4417-9aba-d3d01db826f0
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_tipo_de_usuario
+field_name: field_tipo_de_usuario
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: proveedor
+      label: Proveedor
+    -
+      value: cliente
+      label: Cliente
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

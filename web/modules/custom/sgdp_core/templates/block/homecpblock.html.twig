@@ -1,0 +1,25 @@
+{% if logged_in and rol_user == "cliente" %}
+
+	<div class="container mt-4">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-auto mb-2 mb-md-0">
+				<a class="btn btn-outline-primary btn-lg w-100" href="/consulta-proveedores">Consulta de proveedores</a>
+			</div>
+			{# <div class="col-12 col-md-auto">
+				<a class="btn btn-outline-primary btn-lg w-100" href="/informe-proveedores">Informe Proveedor</a>
+			</div> #}
+		</div>
+	</div>
+{% elseif rol_user == "proveedor" %}
+
+	<div class="container mt-4">
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-auto mb-2 mb-md-0">
+				<a class="btn btn-outline-primary btn-lg w-100" href="/user/edit">Registro datos basicos</a>
+			</div>
+			{# <div class="col-12 col-md-auto">
+				<a class="btn btn-outline-primary btn-lg w-100" href="/documentos-proveedor">Subir documentos</a>
+			</div> #}
+		</div>
+	</div>
+{% endif %}

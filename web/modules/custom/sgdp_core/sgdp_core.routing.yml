@@ -1,0 +1,15 @@
+sgdp_core.conect_provider:
+  path: '/conect-provider/{id}'
+  defaults:
+    _title: 'Conect provider'
+    _controller: '\Drupal\sgdp_core\Controller\ConectProvider::conectProvider'
+  requirements:
+    _permission: 'access content'
+
+sgdp_core.disconect_provider:
+  path: '/disconect-provider/{id}'
+  defaults:
+    _title: 'Disonect provider'
+    _controller: '\Drupal\sgdp_core\Controller\ConectProvider::disconectProvider'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,19 @@
+uuid: d2431990-b670-4643-ad39-f17cd0a51cb2
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_proveedores_asignados
+field_name: field_proveedores_asignados
+entity_type: user
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

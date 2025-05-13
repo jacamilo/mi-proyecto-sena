@@ -1,0 +1,68 @@
+uuid: 550adc45-2f6f-4bca-895d-60c57ee89b83
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.full
+    - field.field.user.user.field_clientes_asignados
+    - field.field.user.user.field_nit
+    - field.field.user.user.field_nombre_completo
+    - field.field.user.user.field_proveedores_asignados
+    - field.field.user.user.field_rut
+    - field.field.user.user.field_tipo_de_usuario
+  module:
+    - file
+    - layout_builder
+    - options
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.full
+targetEntityType: user
+bundle: user
+mode: full
+content:
+  field_nit:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_nombre_completo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_rut:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_tipo_de_usuario:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_clientes_asignados: true
+  field_proveedores_asignados: true
+  langcode: true

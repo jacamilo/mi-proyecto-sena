@@ -1,0 +1,76 @@
+uuid: 3fc600dc-7cfc-4ed3-b42a-51edfe2b9345
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_clientes_asignados
+    - field.field.user.user.field_nit
+    - field.field.user.user.field_nombre_completo
+    - field.field.user.user.field_proveedores_asignados
+    - field.field.user.user.field_rut
+    - field.field.user.user.field_tipo_de_usuario
+  module:
+    - file
+    - options
+    - user
+_core:
+  default_config_hash: mZLyuWM9CQx2ZJVqFGSbzgFnHzudVbHBYmdU256A5Wk
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_clientes_asignados:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_nit:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_nombre_completo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_proveedores_asignados:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_rut:
+    type: file_default
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_tipo_de_usuario:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  langcode: true

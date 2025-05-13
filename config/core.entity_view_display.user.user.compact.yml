@@ -1,0 +1,30 @@
+uuid: 069fd06c-21e9-40f2-927b-9a7cea444bb5
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_clientes_asignados
+    - field.field.user.user.field_nit
+    - field.field.user.user.field_nombre_completo
+    - field.field.user.user.field_proveedores_asignados
+    - field.field.user.user.field_rut
+    - field.field.user.user.field_tipo_de_usuario
+  module:
+    - user
+_core:
+  default_config_hash: 00zr_RBdTjPjBGITD3h4c1ESQZimjdVCcHGt1trLqIY
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content: {  }
+hidden:
+  field_clientes_asignados: true
+  field_nit: true
+  field_nombre_completo: true
+  field_proveedores_asignados: true
+  field_rut: true
+  field_tipo_de_usuario: true
+  langcode: true
+  member_for: true

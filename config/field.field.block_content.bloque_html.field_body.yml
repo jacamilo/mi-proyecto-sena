@@ -1,0 +1,24 @@
+uuid: 20e68e5c-350a-4336-8978-62e2122c7d2c
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_html
+    - field.storage.block_content.field_body
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.bloque_html.field_body
+field_name: field_body
+entity_type: block_content
+bundle: bloque_html
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

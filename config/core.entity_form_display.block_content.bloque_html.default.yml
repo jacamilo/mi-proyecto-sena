@@ -1,0 +1,38 @@
+uuid: d3461d3c-3696-400e-b6fe-0379488ad8bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - block_content.type.bloque_html
+    - field.field.block_content.bloque_html.field_body
+  module:
+    - text
+id: block_content.bloque_html.default
+targetEntityType: block_content
+bundle: bloque_html
+mode: default
+content:
+  field_body:
+    type: text_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+hidden: {  }
