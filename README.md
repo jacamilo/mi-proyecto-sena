@@ -1,6 +1,3 @@
-¡Gracias por tu paciencia y aclaración! Ahora sí, a continuación te entrego el **`README.md` completo** de principio a fin, con **todo el contenido correctamente incluido** dentro del mismo bloque, comenzando con el título `# SGDP - Sistema de Gestión de Documentos y Procesos`. Puedes copiar y pegarlo directamente como está para usarlo en tu repositorio.
-
----
 
 ````markdown
 # SGDP - Sistema de Gestión de Documentos y Procesos
@@ -159,9 +156,4 @@ ddev describe
 Este proyecto ha sido desarrollado por el equipo de desarrollo interno.
 Drupal es un proyecto de código abierto bajo licencia [GPL](https://www.gnu.org/licenses/gpl-2.0.html).
 
----
 
-```
-
-¿Quieres que te genere también el archivo `.ddev/config.yaml` preconfigurado o el `.gitignore` sugerido para un proyecto Drupal?
-```
