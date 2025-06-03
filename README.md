@@ -139,6 +139,14 @@ ddev describe
   ```bash
   ddev drush updb
   ```
+Navegador
+
+Google Chrome
+Versión 137.0.7151.55 ( Deseable)
+Microsoft Edge
+Versión 136.0.3240.92
+
+
 
 ---
 
